@@ -1,0 +1,2 @@
+# gitleaks
+Password test
