@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 
@@ -16,8 +19,8 @@ func main() {
 	var e int
 	fmt.Println(e)
 
-	// opps I added a secret at line 20
-	awsToken := "AKIALALEMEL33243OLIA"
+	// load secret via env
+	awsToken := os.Getenv("AWS_TOKEN")
 
 	f := "apple"
 	fmt.Println(f)
