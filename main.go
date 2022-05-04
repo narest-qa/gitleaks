@@ -20,7 +20,7 @@ func main() {
 	fmt.Println(e)
 
 	// load secret via env
-	awsToken := os.Getenv("AWS_TOKEN")
+	//awsToken := os.Getenv("AWS_TOKEN")
 
 	f := "apple"
 	fmt.Println(f)
