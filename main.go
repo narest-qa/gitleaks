@@ -22,7 +22,14 @@ func main() {
 	// load secret via env
 	//test
 	awsToken := os.Getenv("AWS_TOKEN")
+//new add
+	func buildSql(email string) string {
+  return fmt.Sprintf("SELECT * FROM users WHERE email='%s';", email)
+}
 
+buildSql("oyetoketoby80@gmail.com")
+	//test added
+	
 	f := "apple"
 	fmt.Println(f)
 }
